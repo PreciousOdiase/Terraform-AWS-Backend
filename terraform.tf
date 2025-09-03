@@ -5,4 +5,11 @@ terraform {
       version = "6.11.0"
     }
   }
+  # backend "s3" {
+  #   bucket         = "state-bucket-8932"
+  #   key            = "production/state"
+  #   use_lockfile   = true
+  #   region         = "us-east-1"
+  #   dynamodb_table = "state-dynamo"
+  # }
 }
