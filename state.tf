@@ -29,10 +29,10 @@ resource "aws_s3_bucket_server_side_encryption_configuration" "state-sse" {
 resource "aws_dynamodb_table" "state-dynamodb-table" {
   name         = var.state_dynamodb
   billing_mode = "PAY_PER_REQUEST"
-  hash_key     = "LockId"
+  hash_key     = "LockID"
 
   attribute {
-    name = "LockId"
+    name = "LockID"
     type = "S"
   }
 }
