@@ -54,6 +54,8 @@ Edit variables.tf to set:
 
 ### 3. Initialize and apply (local backend)
 
+Before running the following commands, comment or remove the **backend "s3"{}** block in the terraform.tf file. Then run the following commands:
+
 ```
 terraform init
 terraform apply
